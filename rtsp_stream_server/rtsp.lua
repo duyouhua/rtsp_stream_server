@@ -21,7 +21,7 @@ config.record.setmp4path(_RECORD_DIR)
 function OnStarted(   )
 	print("在rtsp.lua文件中添加RTSP直播源");
 	-----下面是一个示例,可以添加多个
---	streampull.add("stream1",1,1,"rtsp://192.168.1.101/");
+	streampull.add("stream1",1,1,"rtsp://192.168.1.101/");
 	streampull.add_with_args("stream2",1,1,"-loglevel",0,"-re","-i","D:/video/error.mp4",nil);
 --	streampull.add_ffmpeg("stream3",1,1,写ffmpeg的参数);
 
